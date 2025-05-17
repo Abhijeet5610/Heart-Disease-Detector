@@ -38,7 +38,7 @@ Enter the patient's medical details below.
 This model predicts whether the person is likely to have heart disease.
 """)
 
-age = st.number_input('Age (years)', min_value=1, max_value=120, value=0)
+age = st.number_input('Age (years)', min_value=1, max_value=120, value=1)
 sex = st.selectbox('Sex', options=[0,1], format_func=lambda x: 'Female' if x==0 else 'Male')
 cp = st.selectbox('Chest Pain Type (0-3)', options=[0,1,2,3], 
                   help='0=Typical angina, 1=Atypical angina, 2=Non-anginal pain, 3=Asymptomatic')
