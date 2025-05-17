@@ -38,18 +38,18 @@ Enter the patient's medical details below.
 This model predicts whether the person is likely to have heart disease.
 """)
 
-age = st.number_input('Age (years)', min_value=1, max_value=120, value=54)
+age = st.number_input('Age (years)', min_value=1, max_value=120, value=0)
 sex = st.selectbox('Sex', options=[0,1], format_func=lambda x: 'Female' if x==0 else 'Male')
 cp = st.selectbox('Chest Pain Type (0-3)', options=[0,1,2,3], 
                   help='0=Typical angina, 1=Atypical angina, 2=Non-anginal pain, 3=Asymptomatic')
-trestbps = st.number_input('Resting Blood Pressure (mm Hg)', min_value=80, max_value=200, value=140)
-chol = st.number_input('Cholesterol (mg/dl)', min_value=100, max_value=600, value=239)
+trestbps = st.number_input('Resting Blood Pressure (mm Hg)', min_value=80, max_value=200, value=0)
+chol = st.number_input('Cholesterol (mg/dl)', min_value=100, max_value=600, value=0)
 fbs = st.selectbox('Fasting Blood Sugar > 120 mg/dl', options=[0,1], format_func=lambda x: 'No' if x==0 else 'Yes')
 restecg = st.selectbox('Resting ECG Results (0-2)', options=[0,1,2],
                        help='0=Normal, 1=ST-T wave abnormality, 2=Left ventricular hypertrophy')
-thalach = st.number_input('Max Heart Rate Achieved', min_value=60, max_value=220, value=160)
+thalach = st.number_input('Max Heart Rate Achieved', min_value=60, max_value=220, value=0)
 exang = st.selectbox('Exercise Induced Angina', options=[0,1], format_func=lambda x: 'No' if x==0 else 'Yes')
-oldpeak = st.number_input('Oldpeak (ST depression)', min_value=0.0, max_value=6.0, value=1.2, step=0.1)
+oldpeak = st.number_input('Oldpeak (ST depression)', min_value=0.0, max_value=6.0, value=1.0, step=0.1)
 slope = st.selectbox('Slope of the Peak ST Segment (0-2)', options=[0,1,2],
                      help='0=Upsloping, 1=Flat, 2=Downsloping')
 ca = st.selectbox('Number of Major Vessels Colored (0-4)', options=[0,1,2,3,4])
