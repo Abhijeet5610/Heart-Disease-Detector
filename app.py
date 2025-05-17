@@ -32,7 +32,7 @@ def bagging_predict(trees, row):
 
 st.set_page_config(page_title="Heart Disease Predictor", page_icon="❤️", layout="centered")
 
-st.title("🩺 Heart Disease Prediction Web App")
+st.title("Heart Disease Predictor")
 st.markdown("""
 Enter the patient's medical details below.  
 This model predicts whether the person is likely to have heart disease.
